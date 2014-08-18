@@ -127,8 +127,7 @@
   }
   
   function destroy_ () {
-    this.reset();
-    this._ = none;
+    (reset_.call(this))._ = none;
   }
   
   function err () { 
