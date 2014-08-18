@@ -22,67 +22,67 @@
       <h3>init</h3>
       <p><em>Ticker ticker([float delay = 1000, int repeatcount = Infinity])</em></p>
       <p>
-      <code><pre>
+      <code>
       var t = ticker(1000 / 10, 5);
-      </pre></code>
+      </code>
       </p>
     </section>
     <section>
       <h3>cache a function</h3>
       <p><em>Ticker .tick(function func)</em></p>
       <p>
-      <code><pre>
-      function func (e) {
-        // stuff();
-        console.log(this, arguments);
-      }
+      <code>
+      function func (e) {<br>
+        // stuff();<br>
+        console.log(this, arguments);<br>
+      }<br>
       
       t.tick(func);
-      </pre></code>
+      </code>
       </p>
     </section>
     <section>
       <h3>call</h3>
       <p><em>Ticker .start([(any) setup])</em></p>
       <p>
-      <code><pre>
+      <code>
       t.start();
-      </pre></code>
+      </code>
       </p>
     </section>
     <section>
       <h3>pause</h3>
       <p><em>Ticker .stop(void)</em></p>
       <p>
-      <code><pre>
+      <code>
       t.stop();
-      </pre></code>
+      </code>
       </p>
     </section>
     <section>
       <h3>cancel</h3>
       <p><em>Ticker .reset(void)</em></p>
       <p>
-      <code><pre>
+      <code>
       t.reset();  
-      </pre></code>
+      </code>
       </p>
     </section>
     <section>
       <h3>query state</h3>
       <p><em>Object .state(void)</em></p>
       <p>
-      <code><pre>
+      <code>
       console.log(t.state());
-      </pre></code></p>
+      </code></p>
     </section>
     <section>
       <h3>cleanup</h3>
       <p><em>void .destroy(void)</em></p>
       <p>
-      <code><pre>
+      <code>
       t.destroy();
-      </pre></code>
+      </code>
       </p>
     </section>
   </section>
