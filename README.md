@@ -1,24 +1,21 @@
-[ticker.js]()
-=============
-
-`.setTimeout()` wrapper
------------------------
-
-* * * * *
+[ticker.js](), ` .setTimeout()` wrapper
+---------------------------------------
 
 API
 ---
 
-init: Ticker ticker([float delay = 1000, int repeatcount = Infinity])
----------------------------------------------------------------------
+### init
+
+*Ticker ticker([float delay = 1000, int repeatcount = Infinity])*
 
 ``
 
           var t = ticker(1000 / 10, 5);
           
 
-cache a function: Ticker .tick(function func)
----------------------------------------------
+### cache a function
+
+*Ticker .tick(function func)*
 
 ``
 
@@ -30,40 +27,45 @@ cache a function: Ticker .tick(function func)
           t.tick(func);
           
 
-call: Ticker .start([(any) setup])
-----------------------------------
+### call
+
+*Ticker .start([(any) setup])*
 
 ``
 
           t.start();
           
 
-pause: Ticker .stop(void)
--------------------------
+### pause
+
+*Ticker .stop(void)*
 
 ``
 
           t.stop();
           
 
-cancel: Ticker .reset(void)
----------------------------
+### cancel
+
+*Ticker .reset(void)*
 
 ``
 
           t.reset();  
           
 
-query state: Object .state(void)
---------------------------------
+### query state
+
+*Object .state(void)*
 
 ``
 
           console.log(t.state());
           
 
-cleanup: void .destroy(void)
-----------------------------
+### cleanup
+
+*void .destroy(void)*
 
 ``
 
