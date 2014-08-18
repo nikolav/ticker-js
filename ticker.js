@@ -3,7 +3,7 @@
 // author      : vukovic nikola
 // description : `.setTimeout()` wrapper
 // email       : vukovicnikola2014@gmail.com
-// gh          : 
+// gh          : https://github.com/nikolav/ticker-js
 // license     : public domain, do what you want I don't care if it breaks something
 
 ;

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <title>ticker.js</title>
+  <style type="text/css">
+  body {
+    font-family: monospace;
+  }
+  </style>
+</head>
+<body>
+  <section>
+    <hgroup>
+      <h1><a href="" target="_blank" src="https://github.com/nikolav/ticker-js">ticker.js</a></h1>
+      <h2><code>.setTimeout()</code> wrapper</h2>
+    </hgroup>
+  </section><hr>
+  <section>
+    <h2>API</h2>
+    <section>
+      <h2>init: Ticker ticker([float delay = 1000, int repeatcount = Infinity])</h2>
+      <p>
+      <code><pre>
+      var t = ticker(1000 / 10, 5);
+      </pre></code>
+      </p>
+    </section>
+    <section>
+      <h2>cache a function: Ticker .tick(function func)</h2>
+      <p>
+      <code><pre>
+      function func (e) {
+        // stuff();
+        console.log(this, arguments);
+      }
+      
+      t.tick(func);
+      </pre></code>
+      </p>
+    </section>
+    <section>
+      <h2>call: Ticker .start([(any) setup])</h2>
+      <p>
+      <code><pre>
+      t.start();
+      </pre></code>
+      </p>
+    </section>
+    <section>
+      <h2>pause: Ticker .stop(void)</h2>
+      <p>
+      <code><pre>
+      t.stop();
+      </pre></code>
+      </p>
+    </section>
+    <section>
+      <h2>cancel: Ticker .reset(void)</h2>
+      <p>
+      <code><pre>
+      t.reset();  
+      </pre></code>
+      </p>
+    </section>
+    <section>
+      <h2>query state: Object .state(void)</h2>
+      <p>
+      <code><pre>
+      console.log(t.state());
+      </pre></code></p>
+    </section>
+    <section>
+      <h2>cleanup: void .destroy(void)</h2>
+      <p>
+      <code><pre>
+      t.destroy();
+      </pre></code>
+      </p>
+    </section>
+  </section>
+</body>
+</html>
