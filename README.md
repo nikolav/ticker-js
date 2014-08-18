@@ -14,7 +14,7 @@ API
 
 *Ticker .tick(function func)*
 
-`       function func (e) {         // stuff();         console.log(this, arguments);       }              t.tick(func);       `
+`       t.tick(func);       `
 
 ### call
 
