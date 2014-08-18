@@ -86,7 +86,9 @@
   'Ticker'   : Ticker});
   
   // ctor
-  function Ticker () { // (float) delay [, (int) repeatcount]
+  // @param float, delay, optional, default 1000ms
+  // @param int,   repeat-count, optional, default Infinity
+  function Ticker () {
     this._ = newstate(this, arguments);
   }
   
