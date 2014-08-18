@@ -11,15 +11,16 @@
 </head>
 <body>
   <section>
-    <hgroup>
-      <h1><a href="" target="_blank" src="https://github.com/nikolav/ticker-js">ticker.js</a></h1>
-      <h2><code>.setTimeout()</code> wrapper</h2>
-    </hgroup>
-  </section><hr>
+    <h2>
+      <a href="" target="_blank" src="https://github.com/nikolav/ticker-js">ticker.js</a>,
+      <code> .setTimeout()</code> wrapper
+    </h2>
+  </section>
   <section>
     <h2>API</h2>
     <section>
-      <h2>init: Ticker ticker([float delay = 1000, int repeatcount = Infinity])</h2>
+      <h3>init</h3>
+      <p><em>Ticker ticker([float delay = 1000, int repeatcount = Infinity])</em></p>
       <p>
       <code><pre>
       var t = ticker(1000 / 10, 5);
@@ -27,7 +28,8 @@
       </p>
     </section>
     <section>
-      <h2>cache a function: Ticker .tick(function func)</h2>
+      <h3>cache a function</h3>
+      <p><em>Ticker .tick(function func)</em></p>
       <p>
       <code><pre>
       function func (e) {
@@ -40,7 +42,8 @@
       </p>
     </section>
     <section>
-      <h2>call: Ticker .start([(any) setup])</h2>
+      <h3>call</h3>
+      <p><em>Ticker .start([(any) setup])</em></p>
       <p>
       <code><pre>
       t.start();
@@ -48,7 +51,8 @@
       </p>
     </section>
     <section>
-      <h2>pause: Ticker .stop(void)</h2>
+      <h3>pause</h3>
+      <p><em>Ticker .stop(void)</em></p>
       <p>
       <code><pre>
       t.stop();
@@ -56,7 +60,8 @@
       </p>
     </section>
     <section>
-      <h2>cancel: Ticker .reset(void)</h2>
+      <h3>cancel</h3>
+      <p><em>Ticker .reset(void)</em></p>
       <p>
       <code><pre>
       t.reset();  
@@ -64,14 +69,16 @@
       </p>
     </section>
     <section>
-      <h2>query state: Object .state(void)</h2>
+      <h3>query state</h3>
+      <p><em>Object .state(void)</em></p>
       <p>
       <code><pre>
       console.log(t.state());
       </pre></code></p>
     </section>
     <section>
-      <h2>cleanup: void .destroy(void)</h2>
+      <h3>cleanup</h3>
+      <p><em>void .destroy(void)</em></p>
       <p>
       <code><pre>
       t.destroy();
