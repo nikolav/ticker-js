@@ -2,17 +2,13 @@
   "name": "ticker.js",
   "version": "1.0.0",
   "description": ".setTimeout wrapper",
-  "main": "ticker.js",
+  "main": "./ticker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/nikolav/ticker-js.git"
-  },
-  "keywords": [],
-  "author": "nikolav",
-  "license": "ISC",
-  "bugs": {},
-  "homepage": "https://github.com/nikolav/ticker-js#readme"
+  }, 
+  "dependencies": {}
 }
