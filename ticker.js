@@ -5,15 +5,10 @@
 // gh          : https://github.com/nikolav/ticker-js
 // license     : public
 
-module.exports = (function (globals) {
-  var clearTimeout = globals.clearTimeout;
-  var Date = globals.Date;
-  var Object = globals.Object;
-  var pArray = globals.Array.prototype;
-  var parseFloat = globals.parseFloat;
-  var pFunction = globals.Function.prototype;
-  var pObject = globals.Object.prototype;
-  var setTimeout = globals.setTimeout;
+module.exports = (function (globals, none) {
+  var pArray = Array.prototype;
+  var pFunction = Function.prototype;
+  var pObject = Object.prototype;
 
   var call_ = pFunction.call;
   var bind_ =
@@ -34,7 +29,7 @@ module.exports = (function (globals) {
 
   var cls = bind_(call_, pObject.toString);
   var hasown = bind_(call_, pObject.hasOwnProperty);
-  var mathAbs = globals.Math.abs;
+  var mathAbs = Math.abs;
   var slice = bind_(call_, pArray.slice);
 
   var defaults = {
@@ -272,6 +267,6 @@ module.exports = (function (globals) {
     _.ti = none;
     _.on = OFF;
   }
-})(this);
+})(new Function("return this")());
 
 //eof
